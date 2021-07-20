@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "BookName": "Ksiazka",
+        "PublicDate": "lorem",
+        "BookDescription": "lorem",
+        "Category": "lorem"
+    },
+    {      
+        "id": 2,
+        "BookName": "Ksiazka",
+        "PublicDate": "lorem",
+        "BookDescription": "lorem",
+        "Category": "lorem"
+    },
+    {      
+        "id": 3,
+        "BookName": "Ksiazka",
+        "PublicDate": "lorem",
+        "BookDescription": "lorem",
+        "Category": "cos"
+    },
+    {      
+        "id": 4,
+        "BookName": "Ksiazka",
+        "PublicDate": "lorem",
+        "BookDescription": "lorem",
+        "Category": "lorem"
+    }
+]

@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+  font-family: sans-serif;
+}
+.table-container {
+  padding: 0 10%;
+  margin: 40px auto 0;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: #ee2828;
+}
+table thead tr th {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: azure;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #dee2e685
+}
+table tbody tr td {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: #f1f1f1;
+  background-color: #3c3f44;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+}
+button {
+  background-color: #ee2828;
+  text-decoration: none;
+  user-select: none;
+  border: 1px solid transparent;
+  margin-right: 1rem;
+  width: 4rem;
+  height: 1.5rem;
+  color:white;
+  border-radius: 3px;
+}
+.formToAddBook{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.formToAddBook h1{
+  margin-bottom: 1rem;
+  color: #ee2828;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.formToAddBook form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.formToAddBook form input {
+  margin-bottom: 1.4rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  width: 40%;
+  height: 100%;
+}
+
+@media all and (max-width: 768px){
+
+  table thead{
+    display: none;
+
+  }
+  table, table tbody,  table tr, table td{
+    display: block;
+    width: 100%;
+  }
+  table tr {
+    margin-bottom: 15px;
+  }
+  table tbody tr td{
+    text-align: center;
+    position: relative;
+  }
+
 }
