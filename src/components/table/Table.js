@@ -7,8 +7,6 @@ import EditRowDate from './editTable/editRowDate'
 
 function Table(props) {
 
-    // console.log(props.books)
-
     const [editBookId, setEditBookId] = useState(null)
 
     const [editBookData, setEditBookData] = useState({
@@ -41,8 +39,6 @@ function Table(props) {
 
 
         setEditBookData(newFormData);
-
-        console.log(newFormData)
 
     }
 

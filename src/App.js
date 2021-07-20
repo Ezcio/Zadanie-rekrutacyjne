@@ -47,25 +47,17 @@ function App() {
 
   const replacmentBook = (editedBook) => {
 
-    // console.log(books)
-
-    // // console.log(editedBook)
     setBooks(editedBook)
 
   }
 
-  // useEffect(()=>{
-
-  //   setBooks(data)
-
-  // },[data])
 
   return (
     <div className='table-container'>
 
       <SearchBar onSearch = {(term) => searchHandler(term)}/>
 
-      <Table books={books} cos={addNewBook} replacmentBook={(editedBook) => replacmentBook(editedBook)}/>
+      <Table books={books} replacmentBook={(editedBook) => replacmentBook(editedBook)}/>
 
       <FormToAddBook onUpdate = {(addBook) => updateBooksHandler(addBook)}/>
  
